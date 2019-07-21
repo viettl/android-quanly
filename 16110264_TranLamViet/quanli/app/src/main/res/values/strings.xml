@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">quanli</string>
+
+    <string name="menu_settings">Settings</string>
+    <string name="about_us">Thông tin tác giả</string>
+    <string name="help">Trợ giúp</string>
+
+    <string name="them_no">Thêm nợ mới</string>
+    <string name="danhsach_no">Danh sách nợ</string>
+    <string name="nguoi_den_han">Ai sắp trả nợ?</string>
+    <string name="tong_tien_no">000,000</string>
+    <string name="sort">Sắp xếp</string>
+    <string name="edit_loan">Chỉnh sửa nợ</string>
+    <string name="app_name_en">Loan management</string>
+    <string name="app_introduction">Đồ án môn di động</string>
+
+</resources>

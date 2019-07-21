@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/customized_button_5">
+
+    <RelativeLayout
+        android:id="@+id/margin_layout_left"
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/margin_layout_right"
+        android:layout_toEndOf="@id/margin_layout_left"
+        android:background="@drawable/customized_button_3"
+        android:gravity="center_vertical"
+        android:minHeight="1dp"
+        android:orientation="vertical"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/tv_detail_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_detail_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/margin_layout_right"
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

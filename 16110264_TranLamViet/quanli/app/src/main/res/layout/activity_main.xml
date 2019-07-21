@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/gradient">
+
+    <android.support.v7.widget.Toolbar
+
+        android:id="@+id/toolbarMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/main_sum_debt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tong_tien_no"
+            android:textColor="@color/colorPrimary"
+            android:textSize="56sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng tiền nợ gốc"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customized_button_2"
+            android:gravity="start">
+
+            <LinearLayout
+                android:id="@+id/button_them_no"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="101dp"
+                    android:scaleType="center"
+                    android:src="@drawable/add_48" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:text="Thêm nợ mới"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customized_button_4"
+            android:gravity="end">
+
+            <LinearLayout
+                android:id="@+id/button_danhsach_no"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="97dp"
+                    android:scaleType="center"
+                    android:src="@drawable/list_48" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:text="Danh sách nợ"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Tới hạn trả lãi"
+        android:textSize="70px" />
+
+    <ListView
+        android:id="@+id/main_thongbao_denhan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/lightGrey"
+        android:dividerHeight="1px" />
+
+
+</LinearLayout>
